@@ -12,12 +12,17 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.StringUtils;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @Service
@@ -40,14 +45,6 @@ public class WealthService {
         // 驗證 type 欄位值
         validateWealthType(wealthDTO.getType());
 
-        // DTO 映射為實體
-        /*Wealth wealth = new Wealth(
-                wealthDto.getId(),null, // id will be auto-generated
-                wealthDTO.getAmount(),
-                user,
-                LocalDateTime.now(),
-                wealthDTO.getNote()
-        );*/
         Wealth wealth = wealthMapper.toEntity(wealthDTO);
         wealth.setUser(user);
 
@@ -109,9 +106,16 @@ public class WealthService {
         logger.info("查詢分頁收支記錄請求: Page={}, Size={}", page, size);
 
         Page<Wealth> wealthPage = wealthRepository.findByUser(user, PageRequest.of(page, size));
+        logger.info("查詢結果總數量: {}", wealthPage.getTotalElements());
+        logger.info("當前頁面數據: {}", wealthPage.getContent());
         return wealthPage.stream()
                 .map(wealthMapper::toDto) // 使用 Mapper 轉換
                 .collect(Collectors.toList());
+    }
+
+    // 獲取所有記錄總數
+    public long countByUser(User user) {
+        return wealthRepository.countByUser(user);
     }
 
     /**
@@ -143,5 +147,104 @@ public class WealthService {
 
         wealthRepository.delete(wealth);
         logger.info("成功刪除收支記錄: ID={}", id);
+    }
+
+    public Map<String, BigDecimal> getFinancialSummary(User user, LocalDate startDate, LocalDate endDate) {
+        logger.info("開始計算用戶統計數據，User ID: {}", user.getId());
+
+        BigDecimal totalIncome;
+        BigDecimal totalExpense;
+
+        if (startDate != null && endDate != null) {
+            totalIncome = wealthRepository.sumByTypeAndUserAndDateRange("INCOME", user, startDate.atStartOfDay(), endDate.atTime(23, 59, 59));
+            totalExpense = wealthRepository.sumByTypeAndUserAndDateRange("EXPENSE", user, startDate.atStartOfDay(), endDate.atTime(23, 59, 59));
+        } else {
+            totalIncome = wealthRepository.sumByTypeAndUser("INCOME", user);
+            totalExpense = wealthRepository.sumByTypeAndUser("EXPENSE", user);
+        }
+        BigDecimal balance = totalIncome.subtract(totalExpense);
+
+        logger.info("統計完成 - 總收入: {}, 總支出: {}, 結餘: {}", totalIncome, totalExpense, balance);
+
+        Map<String, BigDecimal> summary = new HashMap<>();
+        summary.put("totalIncome", totalIncome);
+        summary.put("totalExpense", totalExpense);
+        summary.put("balance", balance);
+
+        return summary;
+    }
+    public Page<WealthDTO> getWealthsPage(int page, int size, User user,
+                                          String search, String sortColumn, String sortDirection) {
+
+        // 創建排序對象
+        Sort sort = Sort.unsorted();
+        if (sortColumn != null && sortDirection != null) {
+            sort = Sort.by(sortDirection.equalsIgnoreCase("asc") ?
+                    Sort.Direction.ASC : Sort.Direction.DESC, sortColumn);
+        }
+
+        // 創建分頁請求
+        Pageable pageable = PageRequest.of(page, size, sort);
+
+        // 根據是否有搜索條件決定使用哪個查詢方法
+        Page<Wealth> wealthPage;
+        if (StringUtils.hasText(search)) {
+            wealthPage = wealthRepository.findByUserAndSearch(user, search, pageable);
+        } else {
+            wealthPage = wealthRepository.findByUser(user, pageable);
+        }
+
+        return wealthPage.map(wealthMapper::toDto);
+    }
+
+    /**
+     * 根據日期範圍和分頁查詢收支記錄
+     */
+    public Page<WealthDTO> getWealthsPageWithDateRange(int page, int size, User user,
+                                                       String search, String sortColumn, String sortDirection,
+                                                       LocalDate startDate, LocalDate endDate) {
+
+        // 創建排序對象
+        Sort sort = Sort.unsorted();
+        if (sortColumn != null && sortDirection != null) {
+            sort = Sort.by(sortDirection.equalsIgnoreCase("asc") ?
+                    Sort.Direction.ASC : Sort.Direction.DESC, sortColumn);
+        }
+
+        // 創建分頁請求
+        Pageable pageable = PageRequest.of(page, size, sort);
+
+        // 根據日期範圍篩選數據
+        /*Page<Wealth> wealthPage;
+        if (startDate != null && endDate != null) {
+            wealthPage = wealthRepository.findByUserAndTimestampBetween(
+                    user,
+                    startDate.atStartOfDay(),
+                    endDate.atTime(23, 59, 59),
+                    pageable
+            );
+        } else {
+            wealthPage = wealthRepository.findByUser(user, pageable);
+        }*/
+
+        // 根據是否有 search 和日期範圍條件篩選數據
+        Page<Wealth> wealthPage;
+        if (StringUtils.hasText(search)) {
+            // 處理關鍵字搜尋
+            wealthPage = wealthRepository.findByUserAndSearch(user, search, pageable);
+        } else if (startDate != null && endDate != null) {
+            // 處理日期篩選
+            wealthPage = wealthRepository.findByUserAndTimestampBetween(
+                    user,
+                    startDate.atStartOfDay(),
+                    endDate.atTime(23, 59, 59),
+                    pageable
+            );
+        } else {
+            // 沒有篩選條件，返回全部數據
+            wealthPage = wealthRepository.findByUser(user, pageable);
+        }
+
+        return wealthPage.map(wealthMapper::toDto);
     }
 }

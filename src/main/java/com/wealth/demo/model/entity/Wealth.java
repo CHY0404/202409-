@@ -24,7 +24,7 @@ public class Wealth {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id; // 主鍵 ID，自動生成
 
-    @Column(nullable = false,columnDefinition = "ENUM('INCOME', 'EXPENSE')")
+    @Column(nullable = false, columnDefinition = "ENUM('INCOME', 'EXPENSE')")
     private String type;
 
     @Column(nullable = false)

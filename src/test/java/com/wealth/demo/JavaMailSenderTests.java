@@ -19,12 +19,18 @@ public class JavaMailSenderTests {
 
     @Test
     public void sendSimpleMail() throws Exception {
-        SimpleMailMessage message = new SimpleMailMessage();
+            SimpleMailMessage message = new SimpleMailMessage();
 
-        message.setFrom("收支管家<holodd0404@gmail.com>");
-        message.setTo("holodd0404@gmail.com");
-        message.setSubject("主旨：Hello World!!");
-        message.setText("內容：這是一封測試信件");
+            String code= "123";
+            String message1= """
+                    內容:%s
+                    
+                    
+                    """.formatted(code);
+            message.setFrom("收支管家<holodd0404@gmail.com>");
+            message.setTo("holodd0404@gmail.com");
+            message.setSubject("主旨：Hello World!!");
+            message.setText(message1);
 
         mailSender.send(message);
     }

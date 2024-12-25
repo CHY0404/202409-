@@ -10,5 +10,16 @@ body.error-page {
     background-size: 45% auto;
     background-position: 50% 80px;
     background-repeat: no-repeat;
-    background-color: #f1e6da;
+    background-color: #f7f3ed;
+    display: flex; /*  flex 容器 */
+    justify-content: center; /* 水平置中 */
+    align-items: flex-start; /* 垂直靠上 */
+    height: 100vh; /* 視口高度 */
+}
+
+.error-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* 文本置中 */
+    padding-top: 20px; /* 頂部間距 */
 }

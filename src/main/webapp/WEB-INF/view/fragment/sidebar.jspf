@@ -3,12 +3,12 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <aside id="sidebar" class="sidebar bg-light border-end vh-100">
-    <!-- LOGO -->
-    <div class="sidebar-logo text-center py-3">
-        <a href="${pageContext.request.contextPath}/dashboard">
-            <img src="${pageContext.request.contextPath}/images/logo.png" alt="Logo" class="logo">
-        </a>
-    </div>
+<!-- LOGO -->
+<div class="sidebar-logo text-center py-3">
+    <a href="${pageContext.request.contextPath}/income-expense">
+        <img src="${pageContext.request.contextPath}/images/logo.png" alt="Logo" class="logo">
+    </a>
+</div>
 
     <!-- 菜單項目 -->
     <ul class="nav flex-column p-3">
@@ -18,7 +18,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="${pageContext.request.contextPath}/statistics">
+            <a class="nav-link" href="${pageContext.request.contextPath}/stats/statistics">
                 <i class="bi bi-bar-chart-fill me-2"></i> 數據圖表
             </a>
         </li>
@@ -27,5 +27,11 @@
                 <i class="bi bi-person-circle me-2"></i> 會員資料
             </a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="${pageContext.request.contextPath}/logout">
+                 <i class="bi bi-box-arrow-right me-2"></i> 登出
+            </a>
+        </li>
+
     </ul>
 </aside>

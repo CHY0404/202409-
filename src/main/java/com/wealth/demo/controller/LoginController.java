@@ -102,10 +102,10 @@ public class LoginController {
     /**
      * 處理登錄失敗的異常邏輯。
      *
-     * @param errorSource 錯誤來源（如 login）
-     * @param error       錯誤類型（如 username/password）
+     * @param errorSource  錯誤來源（如 login）
+     * @param error        錯誤類型（如 username/password）
      * @param errorMessage 錯誤信息
-     * @param model       用於返回的 Model
+     * @param model        用於返回的 Model
      * @return 返回登錄頁面並顯示錯誤
      */
     private String handleLoginError(String errorSource, String error, String errorMessage, Model model) {

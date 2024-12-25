@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const sidebar = document.getElementById('sidebar');
     const mainContent = document.getElementById('main-content');
     const header = document.getElementById('header');
+    const memberMenu = document.getElementById('member-menu');
     const toggleButton = document.getElementById('sidebar-toggle');
 
     toggleButton.addEventListener('click', () => {

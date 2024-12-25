@@ -157,6 +157,7 @@ public class UserService {
         userRepository.deleteById(id);
         logger.info("用戶 ID: {} 已刪除！", id);
     }
+
     @Transactional
     public void updateProfile(Long userId, String username, String email, String currentPassword, String newPassword) {
         User user = userRepository.findById(userId)

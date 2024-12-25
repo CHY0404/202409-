@@ -11,11 +11,17 @@ import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/wealth")
@@ -93,19 +99,64 @@ public class WealthController {
 
     // 分頁查詢收支記錄
     @GetMapping("/records/json")
-    public ResponseEntity<List<WealthDTO>> getRecords(@RequestParam(defaultValue = "0") int page,
-                                                      @RequestParam(defaultValue = "10") int size,
-                                                      HttpSession session) {
-        logger.info("接收到分頁查詢請求: Page={}, Size={}", page, size);
+    public ResponseEntity<Map<String, Object>> getRecords(
+            @RequestParam(value = "draw", defaultValue = "1") int draw,
+            @RequestParam(value = "start", defaultValue = "0") int start,
+            @RequestParam(value = "length", defaultValue = "10") int length,
+            @RequestParam(value = "search[value]", required = false) String search,
+            @RequestParam(value = "order[0][column]", required = false) Integer sortColumnIndex,
+            @RequestParam(value = "order[0][dir]", required = false) String sortDirection,
+            @RequestParam(value = "startDate", required = false) String startDate,
+            @RequestParam(value = "endDate", required = false) String endDate,
+            HttpSession session) {
 
+        logger.info("接收到分頁查詢請求: Start={}, Length={}, Search={}, StartDate={}, EndDate={}",
+                start, length, search, startDate, endDate);
+
+        // 獲取用戶信息
         Long userId = sessionUtils.getAuthenticatedUserId(session)
                 .orElseThrow(() -> new RuntimeException("未登入，請先登入"));
         User user = validateAuthenticatedUser(userId);
 
-        List<WealthDTO> records = wealthService.getWealths(page, size, user);
-        logger.info("查詢結果: {}", records);
+        // 構建排序條件
+        String sortColumn = getSortColumn(sortColumnIndex);
 
-        return ResponseEntity.ok(records);
+        // 解析日期範圍
+        LocalDate startLocalDate = StringUtils.hasText(startDate) ? LocalDate.parse(startDate) : null;
+        LocalDate endLocalDate = StringUtils.hasText(endDate) ? LocalDate.parse(endDate) : null;
+
+        // 獲取分頁數據
+        int page = start / length;
+        Page<WealthDTO> pageResult = wealthService.getWealthsPageWithDateRange(
+                page,
+                length,
+                user,
+                search,  // 確保搜索參數被傳遞
+                sortColumn,
+                sortDirection,
+                startLocalDate,
+                endLocalDate
+        );
+
+        // 構建返回結果
+        Map<String, Object> response = new HashMap<>();
+        response.put("draw", draw);
+        response.put("recordsTotal", pageResult.getTotalElements());
+        response.put("recordsFiltered", pageResult.getTotalElements());
+        response.put("data", pageResult.getContent());
+
+        return ResponseEntity.ok(response);
+    }
+
+    private String getSortColumn(Integer sortColumnIndex) {
+        if (sortColumnIndex == null) return "timestamp";
+        return switch (sortColumnIndex) {
+            case 0 -> "timestamp";
+            case 1 -> "type";
+            case 2 -> "amount";
+            case 3 -> "note";
+            default -> "timestamp";
+        };
     }
 
     // 日期範圍查詢
@@ -140,6 +191,33 @@ public class WealthController {
 
         return ResponseEntity.ok("刪除成功");
     }
+
+    // 獲取統計數據
+    @GetMapping("/summary")
+    public ResponseEntity<Map<String, BigDecimal>> getFinancialSummary(
+            @RequestParam(value = "startDate", required = false) String startDate,
+            @RequestParam(value = "endDate", required = false) String endDate,
+            HttpSession session) {
+        logger.info("接收到統計數據請求: StartDate={}, EndDate={}", startDate, endDate);
+
+        // 驗證用戶是否登入
+        Long userId = sessionUtils.getAuthenticatedUserId(session)
+                .orElseThrow(() -> new RuntimeException("未登入用戶"));
+        User user = validateAuthenticatedUser(userId);
+
+        // 解析日期範圍
+        LocalDate startLocalDate = StringUtils.hasText(startDate) ? LocalDate.parse(startDate) : null;
+        LocalDate endLocalDate = StringUtils.hasText(endDate) ? LocalDate.parse(endDate) : null;
+
+        // 調用服務層方法獲取統計數據
+        Map<String, BigDecimal> summary = wealthService.getFinancialSummary(user, startLocalDate, endLocalDate);
+
+        logger.info("統計數據計算完成: {}", summary);
+
+        // 返回統計數據
+        return ResponseEntity.ok(summary);
+    }
+
 
     // 通用用戶驗證方法
     private User validateAuthenticatedUser(Long userId) {
