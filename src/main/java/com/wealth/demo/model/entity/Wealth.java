@@ -22,7 +22,7 @@ public class Wealth {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id; // 主鍵 ID，自動生成
+    private Long id;
 
     @Column(nullable = false, columnDefinition = "ENUM('INCOME', 'EXPENSE')")
     private String type;
@@ -41,4 +41,5 @@ public class Wealth {
 
     @Column(length = 255)
     private String note; // 備註，例如 "這是額外的收入" 或 "購買了辦公用品"
+
 }

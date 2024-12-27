@@ -169,4 +169,3 @@ document.addEventListener('DOMContentLoaded', function () {
         await fetchChartData('last-7-days');
     })();
 });
-.

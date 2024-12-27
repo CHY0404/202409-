@@ -78,9 +78,9 @@ async function renderIncomeExpenseChart(startDate, endDate) {
         }
 
         // 更新總收入、總支出和餘額
-        document.getElementById('totalIncome').textContent = summary.totalIncome;
-        document.getElementById('totalExpense').textContent = summary.totalExpense;
-        document.getElementById('balance').textContent = summary.balance;
+        document.getElementById('totalIncome').textContent = summary.totalIncome.toLocaleString('zh-TW', { maximumFractionDigits: 0 });
+        document.getElementById('totalExpense').textContent = summary.totalExpense.toLocaleString('zh-TW', { maximumFractionDigits: 0 });
+        document.getElementById('balance').textContent = summary.balance.toLocaleString('zh-TW', { maximumFractionDigits: 0 });
     } catch (error) {
         console.error('無法加載圓餅圖數據:', error);
     }
@@ -137,7 +137,11 @@ const recordsTable = $('#recordsTable').DataTable({
                     ${data === 'INCOME' ? '收入' : '支出'}</span>`;
             }
         },
-        { data: 'amount' },
+        { data: 'amount',
+          render: function(data) {
+          return data.toLocaleString('zh-TW', { maximumFractionDigits: 0 });
+          }
+         },
         { data: 'note', defaultContent: '' },
         {
             data: 'id',
