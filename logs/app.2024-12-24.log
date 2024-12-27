@@ -1,0 +1,1559 @@
+2024-12-24 09:55:40 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-24 09:55:40 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 6344 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-24 09:55:40 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 09:55:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-24 09:55:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 130 ms. Found 2 JPA repository interfaces.
+2024-12-24 09:55:43 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 09:55:43 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 09:55:43 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 09:55:43 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-24 09:55:44 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-24 09:55:44 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 09:55:44 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3532 ms
+2024-12-24 09:55:44 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-24 09:55:44 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-24 09:55:44 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-24 09:55:45 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-24 09:55:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-24 09:55:45 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b86cb18
+2024-12-24 09:55:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-24 09:55:47 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-24 09:55:47 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 09:55:48 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-24 09:55:49 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-24 09:55:49 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-24 09:55:50 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-24 09:55:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-24 09:55:50 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 10.82 seconds (process running for 11.737)
+2024-12-24 09:56:50 [http-nio-8080-exec-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-24 09:56:50 [http-nio-8080-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-24 09:56:50 [http-nio-8080-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-12-24 09:57:10 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 驗證用戶名和密碼: 123
+2024-12-24 09:57:10 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶 123 驗證成功！
+2024-12-24 09:57:10 [http-nio-8080-exec-7] INFO  com.wealth.demo.util.SessionUtils - 設置用戶到 Session: username=123, userId=3
+2024-12-24 09:57:10 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 09:57:10 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 09:57:11 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 09:57:11 [http-nio-8080-exec-1] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 09:57:11 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 09:57:11 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 09:57:11 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 09:57:11 [http-nio-8080-exec-1] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 09:57:11 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 09:57:11 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 09:57:11 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 09:57:11 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 09:57:11 [http-nio-8080-exec-2] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 09:57:11 [http-nio-8080-exec-2] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 09:57:11 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 09:57:15 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 09:57:15 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 09:57:19 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 09:57:19 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 09:57:21 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 09:57:21 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 09:57:22 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 09:57:22 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 09:57:24 [http-nio-8080-exec-1] INFO  com.wealth.demo.util.SessionUtils - 清除 Session: DD48430B2F4B0C2DEFDA21C1ABC11D8F
+2024-12-24 09:59:13 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 開始註冊新用戶: jkl9420
+2024-12-24 09:59:13 [http-nio-8080-exec-8] WARN  com.wealth.demo.service.UserService - 電子郵件已存在: jkl9420@gmail.com
+2024-12-24 09:59:36 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 開始註冊新用戶: qwe6656170
+2024-12-24 09:59:36 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶 qwe6656170 註冊成功！
+2024-12-24 09:59:45 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 驗證用戶名和密碼: qwe6656170
+2024-12-24 09:59:45 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶 qwe6656170 驗證成功！
+2024-12-24 09:59:45 [http-nio-8080-exec-3] INFO  com.wealth.demo.util.SessionUtils - 設置用戶到 Session: username=qwe6656170, userId=4
+2024-12-24 09:59:45 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 09:59:45 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 09:59:45 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 09:59:45 [http-nio-8080-exec-4] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 4
+2024-12-24 09:59:45 [http-nio-8080-exec-4] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 0, 總支出: 0, 結餘: 0
+2024-12-24 09:59:45 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=0, balance=0, totalExpense=0}
+2024-12-24 09:59:45 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 09:59:45 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 09:59:45 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 09:59:45 [http-nio-8080-exec-6] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 4
+2024-12-24 09:59:45 [http-nio-8080-exec-6] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 0, 總支出: 0, 結餘: 0
+2024-12-24 09:59:45 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=0, balance=0, totalExpense=0}
+2024-12-24 09:59:45 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 09:59:45 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 09:59:45 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 09:59:59 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 接收到新增收支紀錄請求: WealthDTO(id=null, amount=200, timestamp=2024-12-24T01:59, note=早餐, type=EXPENSE)
+2024-12-24 09:59:59 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 09:59:59 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 09:59:59 [http-nio-8080-exec-7] INFO  c.wealth.demo.service.WealthService - 創建收支記錄請求: WealthDTO(id=null, amount=200, timestamp=2024-12-24T01:59, note=早餐, type=EXPENSE)
+2024-12-24 09:59:59 [http-nio-8080-exec-7] INFO  c.wealth.demo.service.WealthService - 成功創建收支記錄: Wealth(id=48, type=EXPENSE, amount=200, timestamp=2024-12-24T01:59, note=早餐)
+2024-12-24 09:59:59 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 成功創建收支記錄
+2024-12-24 09:59:59 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 09:59:59 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 09:59:59 [http-nio-8080-exec-5] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 09:59:59 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 09:59:59 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 09:59:59 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 09:59:59 [http-nio-8080-exec-10] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 4
+2024-12-24 09:59:59 [http-nio-8080-exec-10] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 0, 總支出: 200, 結餘: -200
+2024-12-24 09:59:59 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=0, balance=-200, totalExpense=200}
+2024-12-24 09:59:59 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 09:59:59 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 09:59:59 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 09:59:59 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 4
+2024-12-24 09:59:59 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 0, 總支出: 200, 結餘: -200
+2024-12-24 09:59:59 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=0, balance=-200, totalExpense=200}
+2024-12-24 10:00:25 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 接收到查詢單筆收支記錄請求: ID=48
+2024-12-24 10:00:25 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 10:00:25 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 10:00:25 [http-nio-8080-exec-3] INFO  c.wealth.demo.service.WealthService - 查詢收支記錄請求: ID=48
+2024-12-24 10:00:25 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 查詢結果: WealthDTO(id=48, amount=200, timestamp=2024-12-24T01:59, note=早餐, type=EXPENSE)
+2024-12-24 10:00:30 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 接收到刪除收支記錄請求: ID=48
+2024-12-24 10:00:30 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 10:00:30 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 10:00:30 [http-nio-8080-exec-1] INFO  c.wealth.demo.service.WealthService - 刪除收支記錄請求: ID=48
+2024-12-24 10:00:30 [http-nio-8080-exec-1] INFO  c.wealth.demo.service.WealthService - 成功刪除收支記錄: ID=48
+2024-12-24 10:00:30 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 成功刪除收支記錄: ID=48
+2024-12-24 10:00:30 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:00:30 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 10:00:30 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:00:30 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 10:00:30 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 10:00:30 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 10:00:30 [http-nio-8080-exec-4] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 4
+2024-12-24 10:00:30 [http-nio-8080-exec-4] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 0, 總支出: 0, 結餘: 0
+2024-12-24 10:00:30 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=0, balance=0, totalExpense=0}
+2024-12-24 10:00:30 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:00:30 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 10:00:30 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 10:00:30 [http-nio-8080-exec-6] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 4
+2024-12-24 10:00:30 [http-nio-8080-exec-6] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 0, 總支出: 0, 結餘: 0
+2024-12-24 10:00:30 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=0, balance=0, totalExpense=0}
+2024-12-24 10:00:32 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 10:00:32 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 10:00:42 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:00:42 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 10:00:42 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 10:00:42 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 4
+2024-12-24 10:00:42 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 0, 總支出: 0, 結餘: 0
+2024-12-24 10:00:42 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=0, balance=0, totalExpense=0}
+2024-12-24 10:00:42 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:00:42 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 10:00:42 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 10:00:42 [http-nio-8080-exec-3] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 4
+2024-12-24 10:00:42 [http-nio-8080-exec-3] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 0, 總支出: 0, 結餘: 0
+2024-12-24 10:00:42 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=0, balance=0, totalExpense=0}
+2024-12-24 10:00:42 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:00:42 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 10:00:42 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 10:00:51 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:00:51 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 10:00:51 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 10:00:51 [http-nio-8080-exec-4] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 4
+2024-12-24 10:00:51 [http-nio-8080-exec-4] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 0, 總支出: 0, 結餘: 0
+2024-12-24 10:00:51 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=0, balance=0, totalExpense=0}
+2024-12-24 10:00:51 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:00:51 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 10:00:51 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 10:00:51 [http-nio-8080-exec-6] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 4
+2024-12-24 10:00:51 [http-nio-8080-exec-6] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 0, 總支出: 0, 結餘: 0
+2024-12-24 10:00:51 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=0, balance=0, totalExpense=0}
+2024-12-24 10:00:51 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:00:51 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 10:00:51 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 10:00:55 [http-nio-8080-exec-7] INFO  com.wealth.demo.util.SessionUtils - 清除 Session: E7ADCAA1450DCA2411289EF4E6B588E9
+2024-12-24 10:01:01 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 驗證用戶名和密碼: 123
+2024-12-24 10:01:01 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶 123 驗證成功！
+2024-12-24 10:01:01 [http-nio-8080-exec-9] INFO  com.wealth.demo.util.SessionUtils - 設置用戶到 Session: username=123, userId=3
+2024-12-24 10:01:01 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:01:01 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:01:01 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:01:01 [http-nio-8080-exec-1] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:01:01 [http-nio-8080-exec-1] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:01:01 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:01:01 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:01:01 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:01:01 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:01:01 [http-nio-8080-exec-2] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:01:01 [http-nio-8080-exec-2] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:01:01 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:01:01 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:01:01 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:01:01 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:01:08 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=10, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:01:08 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:01:08 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:01:08 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=20, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:01:08 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:01:08 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:01:10 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=10, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:01:10 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:01:10 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:01:11 [http-nio-8080-exec-5] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:01:11 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:01:11 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:01:16 [http-nio-8080-exec-10] INFO  com.wealth.demo.util.SessionUtils - 清除 Session: CF2D5EDB48CB788AC650FD1C6E6F41A5
+2024-12-24 10:01:29 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 驗證用戶名和密碼: qwe6656170
+2024-12-24 10:01:29 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 用戶 qwe6656170 驗證成功！
+2024-12-24 10:01:29 [http-nio-8080-exec-1] INFO  com.wealth.demo.util.SessionUtils - 設置用戶到 Session: username=qwe6656170, userId=4
+2024-12-24 10:01:29 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:01:29 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 10:01:29 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 10:01:29 [http-nio-8080-exec-6] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 4
+2024-12-24 10:01:29 [http-nio-8080-exec-6] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 0, 總支出: 0, 結餘: 0
+2024-12-24 10:01:29 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=0, balance=0, totalExpense=0}
+2024-12-24 10:01:29 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:01:29 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 10:01:29 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 10:01:29 [http-nio-8080-exec-8] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 4
+2024-12-24 10:01:29 [http-nio-8080-exec-8] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 0, 總支出: 0, 結餘: 0
+2024-12-24 10:01:29 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=0, balance=0, totalExpense=0}
+2024-12-24 10:01:29 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:01:29 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 10:01:29 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 10:01:32 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 接收到新增收支紀錄請求: WealthDTO(id=null, amount=500, timestamp=2024-12-24T02:01, note=, type=INCOME)
+2024-12-24 10:01:32 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 10:01:32 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 10:01:32 [http-nio-8080-exec-10] INFO  c.wealth.demo.service.WealthService - 創建收支記錄請求: WealthDTO(id=null, amount=500, timestamp=2024-12-24T02:01, note=, type=INCOME)
+2024-12-24 10:01:32 [http-nio-8080-exec-10] INFO  c.wealth.demo.service.WealthService - 成功創建收支記錄: Wealth(id=49, type=INCOME, amount=500, timestamp=2024-12-24T02:01, note=)
+2024-12-24 10:01:32 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 成功創建收支記錄
+2024-12-24 10:01:32 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:01:32 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 10:01:32 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:01:32 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 10:01:32 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 10:01:32 [http-nio-8080-exec-3] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 4
+2024-12-24 10:01:32 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 10:01:32 [http-nio-8080-exec-3] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 500, 總支出: 0, 結餘: 500
+2024-12-24 10:01:32 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=500, balance=500, totalExpense=0}
+2024-12-24 10:01:32 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:01:32 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 4
+2024-12-24 10:01:32 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: qwe6656170
+2024-12-24 10:01:32 [http-nio-8080-exec-1] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 4
+2024-12-24 10:01:32 [http-nio-8080-exec-1] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 500, 總支出: 0, 結餘: 500
+2024-12-24 10:01:32 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=500, balance=500, totalExpense=0}
+2024-12-24 10:01:44 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 驗證用戶名和密碼: 123
+2024-12-24 10:01:44 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶 123 驗證成功！
+2024-12-24 10:01:44 [http-nio-8080-exec-6] INFO  com.wealth.demo.util.SessionUtils - 設置用戶到 Session: username=123, userId=3
+2024-12-24 10:01:44 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:01:44 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:01:44 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:01:44 [http-nio-8080-exec-7] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:01:44 [http-nio-8080-exec-7] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:01:44 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:01:44 [http-nio-8080-exec-5] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:01:44 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:01:44 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:01:44 [http-nio-8080-exec-5] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:01:44 [http-nio-8080-exec-5] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:01:44 [http-nio-8080-exec-5] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:01:44 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:01:44 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:01:44 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:01:50 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:01:50 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:01:50 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:01:50 [http-nio-8080-exec-8] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:01:50 [http-nio-8080-exec-8] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:01:50 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:01:50 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:01:50 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:01:50 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:01:50 [http-nio-8080-exec-7] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:01:50 [http-nio-8080-exec-7] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:01:50 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:01:51 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:01:51 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:01:51 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:02:07 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:02:07 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:02:12 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:02:12 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:02:12 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:02:12 [http-nio-8080-exec-2] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:02:12 [http-nio-8080-exec-2] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:02:12 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:02:12 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:02:12 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:02:12 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:02:12 [http-nio-8080-exec-4] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:02:12 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:02:12 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:02:12 [http-nio-8080-exec-4] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:02:12 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:02:12 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:02:14 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:02:14 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:02:14 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:02:14 [http-nio-8080-exec-7] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:02:14 [http-nio-8080-exec-7] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:02:14 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:02:14 [http-nio-8080-exec-5] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:02:14 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:02:14 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:02:14 [http-nio-8080-exec-5] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:02:14 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:02:14 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:02:14 [http-nio-8080-exec-5] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:02:14 [http-nio-8080-exec-5] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:02:14 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:02:19 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:02:19 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:02:23 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:02:23 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:02:23 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:02:23 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:02:23 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:02:23 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:02:23 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:02:23 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:02:23 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:02:23 [http-nio-8080-exec-2] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:02:23 [http-nio-8080-exec-2] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:02:23 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:02:23 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:02:23 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:02:23 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:02:26 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=asc
+2024-12-24 10:02:26 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:02:26 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:02:27 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:02:27 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:02:27 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:02:28 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=2, SortDirection=asc
+2024-12-24 10:02:28 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:02:28 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:02:29 [http-nio-8080-exec-5] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=2, SortDirection=desc
+2024-12-24 10:02:29 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:02:29 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:02:30 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=1, SortDirection=asc
+2024-12-24 10:02:30 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:02:30 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:02:31 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=1, SortDirection=desc
+2024-12-24 10:02:31 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:02:31 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:02:38 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:02:38 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:02:39 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:02:39 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:02:40 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:02:40 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:02:42 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:02:42 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:29:40 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:29:40 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:29:41 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:29:41 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:29:55 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:29:55 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:29:57 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:29:57 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:30:00 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:30:00 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:30:05 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:30:05 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:30:06 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:30:06 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:30:13 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:30:13 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:30:13 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:30:13 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:30:13 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:30:13 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:30:13 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:30:13 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:30:13 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:30:13 [http-nio-8080-exec-2] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:30:13 [http-nio-8080-exec-2] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:30:13 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:30:13 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:30:13 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:30:13 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:30:17 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=10, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:30:17 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:30:17 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:30:18 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=20, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:30:18 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:30:18 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:30:21 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:30:21 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:30:22 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:30:22 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:30:22 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:30:22 [http-nio-8080-exec-3] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:30:22 [http-nio-8080-exec-3] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:30:22 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:30:22 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:30:22 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:30:22 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:30:22 [http-nio-8080-exec-1] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:30:22 [http-nio-8080-exec-1] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:30:22 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:30:22 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:30:22 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:30:22 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:32:58 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=50, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:32:58 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:32:58 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:32:59 [http-nio-8080-exec-5] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=25, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:32:59 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:32:59 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:33:00 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=-1, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:33:00 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:33:00 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:33:08 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=50, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:33:08 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:33:08 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:33:09 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=-1, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:33:09 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:33:09 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:34:12 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 10:34:12 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-24 10:34:12 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-24 10:34:15 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-24 10:34:15 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 20360 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-24 10:34:15 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 10:34:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-24 10:34:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 90 ms. Found 2 JPA repository interfaces.
+2024-12-24 10:34:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 10:34:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 10:34:16 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 10:34:16 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-24 10:34:16 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-24 10:34:16 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 10:34:16 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1658 ms
+2024-12-24 10:34:17 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-24 10:34:17 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-24 10:34:17 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-24 10:34:17 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-24 10:34:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-24 10:34:17 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ec5cc14
+2024-12-24 10:34:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-24 10:34:18 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-24 10:34:18 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 10:34:18 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-24 10:34:19 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-24 10:34:19 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-24 10:34:19 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-24 10:34:19 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-24 10:34:19 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 5.311 seconds (process running for 5.661)
+2024-12-24 10:34:20 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-24 10:34:20 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-24 10:34:20 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-24 10:34:26 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 驗證用戶名和密碼: 123
+2024-12-24 10:34:27 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶 123 驗證成功！
+2024-12-24 10:34:27 [http-nio-8080-exec-6] INFO  com.wealth.demo.util.SessionUtils - 設置用戶到 Session: username=123, userId=3
+2024-12-24 10:34:27 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:34:27 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:34:27 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:34:27 [http-nio-8080-exec-8] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:34:27 [http-nio-8080-exec-8] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:34:27 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:34:27 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:34:27 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:34:27 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:34:28 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:34:28 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:34:28 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:34:28 [http-nio-8080-exec-1] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:34:28 [http-nio-8080-exec-1] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:34:28 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:34:41 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=25, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:34:41 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:34:41 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:34:42 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=50, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:34:42 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:34:42 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:34:46 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:34:46 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:34:46 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:34:53 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:34:53 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:34:53 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:34:53 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:34:53 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:34:53 [http-nio-8080-exec-2] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:34:53 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:34:53 [http-nio-8080-exec-10] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:34:53 [http-nio-8080-exec-2] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:34:53 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:34:53 [http-nio-8080-exec-10] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:34:53 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:34:53 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:34:53 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:34:53 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:35:02 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:35:02 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:35:06 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:35:06 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:35:10 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:35:10 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:35:19 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:35:19 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:35:19 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:35:19 [http-nio-8080-exec-2] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:35:19 [http-nio-8080-exec-2] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:35:19 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:35:19 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:35:19 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:35:19 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:35:19 [http-nio-8080-exec-10] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:35:19 [http-nio-8080-exec-10] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:35:19 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:35:19 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:35:19 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:35:19 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:35:21 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:35:21 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:35:22 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:35:22 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:46:45 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:46:45 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:46:46 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:46:46 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:46:47 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:46:47 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:46:47 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:46:47 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:46:47 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:46:47 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:46:47 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:46:47 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:46:47 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:46:47 [http-nio-8080-exec-6] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:46:47 [http-nio-8080-exec-6] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:46:47 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:46:47 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:46:47 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:46:47 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:46:49 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:46:49 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:47:32 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:47:32 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:47:32 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:47:32 [http-nio-8080-exec-2] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:47:32 [http-nio-8080-exec-2] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:47:32 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:47:32 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 10:47:32 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:47:32 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 10:47:32 [http-nio-8080-exec-10] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 10:47:32 [http-nio-8080-exec-10] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 10:47:32 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 10:47:32 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 10:47:32 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 10:47:32 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:36:49 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m29s482ms129µs600ns).
+2024-12-24 13:58:17 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 13:58:17 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-24 13:58:17 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-24 13:58:20 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-24 13:58:20 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 16664 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-24 13:58:20 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 13:58:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-24 13:58:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 2 JPA repository interfaces.
+2024-12-24 13:58:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 13:58:22 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 13:58:22 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 13:58:22 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-24 13:58:22 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-24 13:58:22 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 13:58:22 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1613 ms
+2024-12-24 13:58:22 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-24 13:58:22 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-24 13:58:22 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-24 13:58:22 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-24 13:58:22 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-24 13:58:22 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6cc8c13c
+2024-12-24 13:58:22 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-24 13:58:23 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-24 13:58:23 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 13:58:24 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-24 13:58:24 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-24 13:58:24 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-24 13:58:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-24 13:58:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-24 13:58:25 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 5.213 seconds (process running for 5.555)
+2024-12-24 13:58:25 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-24 13:58:25 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-24 13:58:25 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-12-24 13:58:58 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 驗證用戶名和密碼: 123
+2024-12-24 13:58:58 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶 123 驗證成功！
+2024-12-24 13:58:58 [http-nio-8080-exec-3] INFO  com.wealth.demo.util.SessionUtils - 設置用戶到 Session: username=123, userId=3
+2024-12-24 13:58:59 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 13:58:59 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:58:59 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 13:58:59 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:58:59 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:58:59 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:58:59 [http-nio-8080-exec-1] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 13:58:59 [http-nio-8080-exec-1] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 13:58:59 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 13:58:59 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 13:58:59 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:58:59 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:58:59 [http-nio-8080-exec-7] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 13:58:59 [http-nio-8080-exec-7] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22310, 結餘: 90
+2024-12-24 13:58:59 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=90, totalExpense=22310}
+2024-12-24 13:59:06 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=25, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 13:59:06 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:59:06 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:59:09 [http-nio-8080-exec-5] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=25, Search=, SortColumn=0, SortDirection=asc
+2024-12-24 13:59:09 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:59:09 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:59:09 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=25, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 13:59:09 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:59:09 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:59:10 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=25, Search=, SortColumn=0, SortDirection=asc
+2024-12-24 13:59:10 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:59:10 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:59:11 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=25, Search=, SortColumn=1, SortDirection=asc
+2024-12-24 13:59:11 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:59:11 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:59:12 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=25, Search=, SortColumn=1, SortDirection=desc
+2024-12-24 13:59:12 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:59:12 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:59:13 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=1, SortDirection=desc
+2024-12-24 13:59:13 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:59:13 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:59:15 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=asc
+2024-12-24 13:59:15 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:59:15 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:59:16 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 13:59:16 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:59:16 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:59:17 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=asc
+2024-12-24 13:59:17 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:59:17 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:59:19 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=3, SortDirection=asc
+2024-12-24 13:59:19 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:59:19 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:59:20 [http-nio-8080-exec-5] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=3, SortDirection=desc
+2024-12-24 13:59:20 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:59:20 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:59:22 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=1, SortDirection=asc
+2024-12-24 13:59:22 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:59:22 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:59:23 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=10, Length=10, Search=, SortColumn=1, SortDirection=asc
+2024-12-24 13:59:23 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:59:23 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:59:24 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=20, Length=10, Search=, SortColumn=1, SortDirection=asc
+2024-12-24 13:59:24 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:59:24 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:59:30 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 接收到新增收支紀錄請求: WealthDTO(id=null, amount=500, timestamp=2024-12-24T05:59, note=, type=EXPENSE)
+2024-12-24 13:59:30 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:59:30 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:59:30 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 創建收支記錄請求: WealthDTO(id=null, amount=500, timestamp=2024-12-24T05:59, note=, type=EXPENSE)
+2024-12-24 13:59:30 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 成功創建收支記錄: Wealth(id=50, type=EXPENSE, amount=500, timestamp=2024-12-24T05:59, note=)
+2024-12-24 13:59:30 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 成功創建收支記錄
+2024-12-24 13:59:30 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 13:59:30 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:59:30 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=1, SortDirection=asc
+2024-12-24 13:59:30 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:59:30 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:59:30 [http-nio-8080-exec-1] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 13:59:30 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:59:30 [http-nio-8080-exec-1] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22810, 結餘: -410
+2024-12-24 13:59:30 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-410, totalExpense=22810}
+2024-12-24 13:59:30 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 13:59:30 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:59:30 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:59:30 [http-nio-8080-exec-7] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 13:59:30 [http-nio-8080-exec-7] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22810, 結餘: -410
+2024-12-24 13:59:30 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-410, totalExpense=22810}
+2024-12-24 13:59:55 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:59:55 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:59:57 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 13:59:57 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:59:57 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:59:57 [http-nio-8080-exec-8] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 13:59:57 [http-nio-8080-exec-8] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22810, 結餘: -410
+2024-12-24 13:59:57 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-410, totalExpense=22810}
+2024-12-24 13:59:57 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 13:59:57 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:59:57 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 13:59:57 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 13:59:57 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 13:59:57 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 13:59:57 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22810, 結餘: -410
+2024-12-24 13:59:57 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-410, totalExpense=22810}
+2024-12-24 13:59:57 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:00:22 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 14:00:22 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:00:24 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 14:00:24 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:00:25 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 14:00:25 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:00:28 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 14:00:28 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:00:29 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 14:00:29 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:00:30 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 14:00:30 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:00:31 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 14:00:31 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:00:32 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 14:00:32 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:00:33 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 14:00:33 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:00:34 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 14:00:34 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:00:36 [http-nio-8080-exec-6] INFO  com.wealth.demo.util.SessionUtils - 清除 Session: 3590DC6DFDB97A0870CD43DCC3D6FC46
+2024-12-24 14:01:09 [http-nio-8080-exec-9] INFO  c.w.demo.service.PasswordService - 已成功發送驗證碼至 123456789@gmail.com
+2024-12-24 14:01:31 [http-nio-8080-exec-1] INFO  c.w.demo.service.PasswordService - 密碼已成功重設，用戶: 123
+2024-12-24 14:01:42 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 驗證用戶名和密碼: 123
+2024-12-24 14:01:42 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶 123 驗證成功！
+2024-12-24 14:01:42 [http-nio-8080-exec-5] INFO  com.wealth.demo.util.SessionUtils - 設置用戶到 Session: username=123, userId=3
+2024-12-24 14:01:43 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 14:01:43 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 14:01:43 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:01:43 [http-nio-8080-exec-3] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 14:01:43 [http-nio-8080-exec-3] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22810, 結餘: -410
+2024-12-24 14:01:43 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-410, totalExpense=22810}
+2024-12-24 14:01:43 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 14:01:43 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 14:01:43 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:01:43 [http-nio-8080-exec-4] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 14:01:43 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 14:01:43 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 14:01:43 [http-nio-8080-exec-4] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22810, 結餘: -410
+2024-12-24 14:01:43 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-410, totalExpense=22810}
+2024-12-24 14:01:43 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:02:12 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 14:02:12 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:02:15 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 14:02:15 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:02:16 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 14:02:16 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:02:25 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 14:02:25 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:02:26 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 14:02:26 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:02:27 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 14:02:27 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:02:29 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 14:02:29 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 14:02:29 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:02:29 [http-nio-8080-exec-8] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 14:02:29 [http-nio-8080-exec-8] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22810, 結餘: -410
+2024-12-24 14:02:29 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-410, totalExpense=22810}
+2024-12-24 14:02:29 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 14:02:29 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 14:02:29 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:02:29 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 14:02:29 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22810, 結餘: -410
+2024-12-24 14:02:29 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-410, totalExpense=22810}
+2024-12-24 14:02:29 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 14:02:29 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 14:02:29 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:02:38 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 14:02:38 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:02:40 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 14:02:40 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 14:02:40 [http-nio-8080-exec-2] INFO  com.wealth.demo.util.SessionUtils - 清除 Session: 14971F67DD060FE36C9D44BD0A13A4ED
+2024-12-24 19:54:23 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h58m37s607ms7µs800ns).
+2024-12-24 22:14:18 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:14:18 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-24 22:14:18 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-24 22:14:25 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-24 22:14:25 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 18472 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-24 22:14:25 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 22:14:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-24 22:14:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
+2024-12-24 22:14:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 22:14:27 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:14:27 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 22:14:27 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-24 22:14:27 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-24 22:14:27 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 22:14:27 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1791 ms
+2024-12-24 22:14:27 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-24 22:14:27 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-24 22:14:28 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-24 22:14:28 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-24 22:14:28 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-24 22:14:28 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61993d18
+2024-12-24 22:14:28 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-24 22:14:29 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-24 22:14:30 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:14:30 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-24 22:14:31 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'wealthExportController': Lookup method resolution failed
+2024-12-24 22:14:31 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:14:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-24 22:14:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-24 22:14:31 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-12-24 22:14:31 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-24 22:14:31 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'wealthExportController': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1314)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1209)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.wealth.demo.SpringbootApplication.main(SpringbootApplication.java:10)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.wealth.demo.controller.WealthExportController] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@36baf30c]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 19 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: javax/servlet/http/HttpServletResponse
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3578)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2676)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletResponse
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 25 common frames omitted
+2024-12-24 22:14:45 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-24 22:14:45 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 20488 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-24 22:14:45 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 22:14:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-24 22:14:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+2024-12-24 22:14:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 22:14:47 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:14:47 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 22:14:47 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-24 22:14:47 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-24 22:14:47 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 22:14:47 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1667 ms
+2024-12-24 22:14:47 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-24 22:14:47 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-24 22:14:47 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-24 22:14:48 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-24 22:14:48 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-24 22:14:48 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d8e4250
+2024-12-24 22:14:48 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-24 22:14:49 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-24 22:14:49 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:14:49 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-24 22:14:50 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'wealthExportController': Lookup method resolution failed
+2024-12-24 22:14:50 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:14:50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-24 22:14:50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-24 22:14:50 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-12-24 22:14:50 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-24 22:14:50 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'wealthExportController': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1314)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1209)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.wealth.demo.SpringbootApplication.main(SpringbootApplication.java:10)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.wealth.demo.controller.WealthExportController] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@36baf30c]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 19 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: javax/servlet/http/HttpServletResponse
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3578)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2676)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletResponse
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 25 common frames omitted
+2024-12-24 22:14:58 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-24 22:14:58 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 12508 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-24 22:14:58 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 22:14:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-24 22:14:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
+2024-12-24 22:14:59 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 22:14:59 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:14:59 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 22:14:59 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-24 22:15:00 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-24 22:15:00 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 22:15:00 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1880 ms
+2024-12-24 22:15:00 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-24 22:15:00 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-24 22:15:00 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-24 22:15:00 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-24 22:15:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-24 22:15:01 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37986daf
+2024-12-24 22:15:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-24 22:15:02 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-24 22:15:02 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:15:02 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-24 22:15:03 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'wealthExportController': Lookup method resolution failed
+2024-12-24 22:15:03 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:15:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-24 22:15:03 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-24 22:15:03 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-12-24 22:15:03 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-24 22:15:03 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'wealthExportController': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:368)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1314)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1209)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.wealth.demo.SpringbootApplication.main(SpringbootApplication.java:10)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.wealth.demo.controller.WealthExportController] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@36baf30c]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:476)
+	... 19 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: javax/servlet/http/HttpServletResponse
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3578)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2676)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletResponse
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 25 common frames omitted
+2024-12-24 22:17:24 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-24 22:17:24 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 13012 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-24 22:17:24 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 22:17:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-24 22:17:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+2024-12-24 22:17:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 22:17:26 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:17:26 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 22:17:26 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-24 22:17:26 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-24 22:17:26 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 22:17:26 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1688 ms
+2024-12-24 22:17:26 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-24 22:17:26 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-24 22:17:26 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-24 22:17:27 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-24 22:17:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-24 22:17:27 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6d3ad37a
+2024-12-24 22:17:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-24 22:17:28 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-24 22:17:28 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:17:28 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-24 22:17:29 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-24 22:17:29 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-24 22:17:29 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:17:29 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-24 22:17:29 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 5.67 seconds (process running for 6.071)
+2024-12-24 22:17:36 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-24 22:17:36 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-24 22:17:36 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-24 22:17:43 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 驗證用戶名和密碼: 123
+2024-12-24 22:17:44 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 用戶 123 驗證成功！
+2024-12-24 22:17:44 [http-nio-8080-exec-8] INFO  com.wealth.demo.util.SessionUtils - 設置用戶到 Session: username=123, userId=3
+2024-12-24 22:19:59 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:19:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-24 22:19:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-24 22:20:02 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-24 22:20:02 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 15784 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-24 22:20:02 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 22:20:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-24 22:20:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+2024-12-24 22:20:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 22:20:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:20:03 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 22:20:03 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-24 22:20:04 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-24 22:20:04 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 22:20:04 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1928 ms
+2024-12-24 22:20:04 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-24 22:20:04 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-24 22:20:04 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-24 22:20:04 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-24 22:20:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-24 22:20:05 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3386ed8
+2024-12-24 22:20:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-24 22:20:05 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-24 22:20:06 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:20:06 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-24 22:20:07 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-24 22:20:07 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-24 22:20:07 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:20:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-24 22:20:07 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 6.25 seconds (process running for 6.776)
+2024-12-24 22:22:52 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:22:52 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-24 22:22:52 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-24 22:22:55 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-24 22:22:55 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 3916 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-24 22:22:55 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 22:22:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-24 22:22:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces.
+2024-12-24 22:22:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 22:22:56 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:22:56 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 22:22:56 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-24 22:22:56 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-24 22:22:56 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 22:22:57 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1647 ms
+2024-12-24 22:22:57 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-24 22:22:57 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-24 22:22:57 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-24 22:22:57 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-24 22:22:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-24 22:22:57 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@154864f8
+2024-12-24 22:22:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-24 22:22:58 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-24 22:22:58 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:22:59 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-24 22:22:59 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-24 22:22:59 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-24 22:23:00 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:23:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-24 22:23:00 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 5.707 seconds (process running for 6.102)
+2024-12-24 22:23:04 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-24 22:23:04 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-24 22:23:04 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-12-24 22:23:10 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 驗證用戶名和密碼: 123
+2024-12-24 22:23:10 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶 123 驗證成功！
+2024-12-24 22:23:10 [http-nio-8080-exec-6] INFO  com.wealth.demo.util.SessionUtils - 設置用戶到 Session: username=123, userId=3
+2024-12-24 22:23:14 [http-nio-8080-exec-5] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 22:23:14 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 22:23:14 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:23:14 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:23:14 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:23:14 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:23:14 [http-nio-8080-exec-5] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 22:23:14 [http-nio-8080-exec-4] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 22:23:14 [http-nio-8080-exec-5] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22810, 結餘: -410
+2024-12-24 22:23:14 [http-nio-8080-exec-4] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 22810, 結餘: -410
+2024-12-24 22:23:14 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-410, totalExpense=22810}
+2024-12-24 22:23:14 [http-nio-8080-exec-5] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-410, totalExpense=22810}
+2024-12-24 22:23:39 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 接收到新增收支紀錄請求: WealthDTO(id=null, amount=200, timestamp=2024-12-24T14:23, note=, type=EXPENSE)
+2024-12-24 22:23:39 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:23:39 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:23:39 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 創建收支記錄請求: WealthDTO(id=null, amount=200, timestamp=2024-12-24T14:23, note=, type=EXPENSE)
+2024-12-24 22:23:39 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 成功創建收支記錄: Wealth(id=51, type=EXPENSE, amount=200, timestamp=2024-12-24T14:23, note=)
+2024-12-24 22:23:39 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 成功創建收支記錄
+2024-12-24 22:27:38 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:27:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-24 22:27:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-24 22:27:41 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-24 22:27:41 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 21680 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-24 22:27:41 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 22:27:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-24 22:27:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
+2024-12-24 22:27:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 22:27:42 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:27:42 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 22:27:42 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-24 22:27:43 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-24 22:27:43 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 22:27:43 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1916 ms
+2024-12-24 22:27:43 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-24 22:27:43 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-24 22:27:43 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-24 22:27:43 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-24 22:27:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-24 22:27:44 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14df5253
+2024-12-24 22:27:44 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-24 22:27:44 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-24 22:27:45 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:27:45 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-24 22:27:46 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-24 22:27:46 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-24 22:27:46 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:27:46 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-24 22:27:46 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 6.24 seconds (process running for 6.655)
+2024-12-24 22:27:46 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-24 22:27:46 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-24 22:27:46 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-12-24 22:27:52 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 驗證用戶名和密碼: 123
+2024-12-24 22:27:52 [http-nio-8080-exec-7] WARN  com.wealth.demo.service.UserService - 密碼錯誤，用戶: 123
+2024-12-24 22:27:58 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 驗證用戶名和密碼: 123
+2024-12-24 22:27:58 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶 123 驗證成功！
+2024-12-24 22:27:58 [http-nio-8080-exec-9] INFO  com.wealth.demo.util.SessionUtils - 設置用戶到 Session: username=123, userId=3
+2024-12-24 22:27:58 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 22:27:58 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:27:58 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:27:58 [http-nio-8080-exec-6] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 22:27:59 [http-nio-8080-exec-6] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 23010, 結餘: -610
+2024-12-24 22:27:59 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-610, totalExpense=23010}
+2024-12-24 22:27:59 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 22:27:59 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:27:59 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:27:59 [http-nio-8080-exec-10] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 22:27:59 [http-nio-8080-exec-10] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 23010, 結餘: -610
+2024-12-24 22:27:59 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-610, totalExpense=23010}
+2024-12-24 22:28:49 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:28:49 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-24 22:28:49 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-24 22:28:52 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-24 22:28:52 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 8712 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-24 22:28:52 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 22:28:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-24 22:28:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2024-12-24 22:28:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 22:28:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:28:54 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 22:28:54 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-24 22:28:54 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-24 22:28:54 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 22:28:54 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1860 ms
+2024-12-24 22:28:54 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-24 22:28:54 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-24 22:28:54 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-24 22:28:54 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-24 22:28:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-24 22:28:55 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6df2a206
+2024-12-24 22:28:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-24 22:28:55 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-24 22:28:56 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:28:56 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-24 22:28:57 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-24 22:28:57 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-24 22:28:57 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:28:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-24 22:28:57 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 5.99 seconds (process running for 6.438)
+2024-12-24 22:29:01 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-24 22:29:01 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-24 22:29:01 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-24 22:29:08 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 驗證用戶名和密碼: 123
+2024-12-24 22:29:09 [http-nio-8080-exec-3] WARN  com.wealth.demo.service.UserService - 密碼錯誤，用戶: 123
+2024-12-24 22:29:13 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 驗證用戶名和密碼: 123
+2024-12-24 22:29:13 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶 123 驗證成功！
+2024-12-24 22:29:13 [http-nio-8080-exec-6] INFO  com.wealth.demo.util.SessionUtils - 設置用戶到 Session: username=123, userId=3
+2024-12-24 22:29:13 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 22:29:13 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:29:14 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:29:14 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 22:29:14 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 23010, 結餘: -610
+2024-12-24 22:29:14 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-610, totalExpense=23010}
+2024-12-24 22:29:14 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 22:29:14 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:29:14 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:29:14 [http-nio-8080-exec-8] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 22:29:14 [http-nio-8080-exec-8] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 23010, 結餘: -610
+2024-12-24 22:29:14 [http-nio-8080-exec-8] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-610, totalExpense=23010}
+2024-12-24 22:29:14 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 22:29:14 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:29:14 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:29:20 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 22:29:20 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:29:20 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:29:20 [http-nio-8080-exec-3] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 22:29:20 [http-nio-8080-exec-3] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 23010, 結餘: -610
+2024-12-24 22:29:20 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-610, totalExpense=23010}
+2024-12-24 22:29:20 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 22:29:20 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:29:20 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:29:20 [http-nio-8080-exec-4] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 22:29:20 [http-nio-8080-exec-4] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 23010, 結餘: -610
+2024-12-24 22:29:20 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-610, totalExpense=23010}
+2024-12-24 22:29:20 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 22:29:20 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:29:20 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:29:40 [http-nio-8080-exec-5] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=asc
+2024-12-24 22:29:40 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:29:40 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:29:41 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 22:29:41 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:29:41 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:29:56 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 22:29:56 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:29:56 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:30:27 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 22:30:27 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:30:27 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:33:43 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:33:43 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-24 22:33:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-24 22:33:46 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-24 22:33:46 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 7036 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-24 22:33:46 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 22:33:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-24 22:33:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+2024-12-24 22:33:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 22:33:47 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:33:47 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 22:33:47 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-24 22:33:48 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-24 22:33:48 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 22:33:48 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1776 ms
+2024-12-24 22:33:48 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-24 22:33:48 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-24 22:33:48 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-24 22:33:48 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-24 22:33:48 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-24 22:33:49 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37986daf
+2024-12-24 22:33:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-24 22:33:50 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-24 22:33:50 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:33:50 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-24 22:33:51 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-24 22:33:51 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-24 22:33:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:33:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-24 22:33:51 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 6.137 seconds (process running for 6.536)
+2024-12-24 22:33:51 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-24 22:33:51 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-24 22:33:51 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-12-24 22:34:03 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 驗證用戶名和密碼: 123
+2024-12-24 22:34:03 [http-nio-8080-exec-5] WARN  com.wealth.demo.service.UserService - 密碼錯誤，用戶: 123
+2024-12-24 22:34:10 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 驗證用戶名和密碼: 123
+2024-12-24 22:34:10 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶 123 驗證成功！
+2024-12-24 22:34:10 [http-nio-8080-exec-9] INFO  com.wealth.demo.util.SessionUtils - 設置用戶到 Session: username=123, userId=3
+2024-12-24 22:34:11 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 22:34:11 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:34:11 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:34:11 [http-nio-8080-exec-6] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 22:34:11 [http-nio-8080-exec-6] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 23010, 結餘: -610
+2024-12-24 22:34:11 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-610, totalExpense=23010}
+2024-12-24 22:34:11 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 22:34:11 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:34:11 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:34:11 [http-nio-8080-exec-4] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 22:34:11 [http-nio-8080-exec-4] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 23010, 結餘: -610
+2024-12-24 22:34:11 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-610, totalExpense=23010}
+2024-12-24 22:34:11 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 22:34:11 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:34:11 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:34:22 [http-nio-8080-exec-5] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 22:34:22 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:34:22 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:34:22 [http-nio-8080-exec-5] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 22:34:22 [http-nio-8080-exec-5] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 23010, 結餘: -610
+2024-12-24 22:34:22 [http-nio-8080-exec-5] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-610, totalExpense=23010}
+2024-12-24 22:34:22 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 22:34:22 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:34:22 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:34:22 [http-nio-8080-exec-7] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 22:34:22 [http-nio-8080-exec-7] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 23010, 結餘: -610
+2024-12-24 22:34:22 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-610, totalExpense=23010}
+2024-12-24 22:34:22 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 22:34:22 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:34:22 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:34:38 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 22:34:38 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:34:38 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:34:45 [http-nio-8080-exec-1] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in the request target [/wealth/records/export-excel?startDate=2024-11-01&endDate=2024-12-01} ]. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:481)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:257)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-12-24 22:36:38 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:36:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-24 22:36:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-24 22:36:41 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-24 22:36:41 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 17396 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-24 22:36:41 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 22:36:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-24 22:36:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+2024-12-24 22:36:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 22:36:42 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:36:42 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 22:36:42 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-24 22:36:42 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-24 22:36:42 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 22:36:42 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1789 ms
+2024-12-24 22:36:43 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-24 22:36:43 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-24 22:36:43 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-24 22:36:43 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-24 22:36:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-24 22:36:43 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d8e4250
+2024-12-24 22:36:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-24 22:36:44 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-24 22:36:44 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:36:45 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-24 22:36:45 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-24 22:36:45 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-24 22:36:46 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:36:46 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-24 22:36:46 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 6.058 seconds (process running for 6.462)
+2024-12-24 22:36:46 [http-nio-8080-exec-1] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in the request target [/wealth/records/export-excel?startDate=2024-11-01&endDate=2024-12-01} ]. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:481)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:257)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-12-24 22:36:49 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-24 22:36:49 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-24 22:36:49 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-12-24 22:37:00 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 驗證用戶名和密碼: 123
+2024-12-24 22:37:00 [http-nio-8080-exec-6] WARN  com.wealth.demo.service.UserService - 密碼錯誤，用戶: 123
+2024-12-24 22:37:05 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 驗證用戶名和密碼: 123
+2024-12-24 22:37:05 [http-nio-8080-exec-8] INFO  com.wealth.demo.service.UserService - 用戶 123 驗證成功！
+2024-12-24 22:37:05 [http-nio-8080-exec-8] INFO  com.wealth.demo.util.SessionUtils - 設置用戶到 Session: username=123, userId=3
+2024-12-24 22:37:06 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 22:37:06 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:37:06 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:37:06 [http-nio-8080-exec-1] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 22:37:06 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 22:37:06 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:37:06 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:37:06 [http-nio-8080-exec-1] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 23010, 結餘: -610
+2024-12-24 22:37:06 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-610, totalExpense=23010}
+2024-12-24 22:37:06 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 22:37:06 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:37:06 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:37:06 [http-nio-8080-exec-3] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 22:37:06 [http-nio-8080-exec-3] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 23010, 結餘: -610
+2024-12-24 22:37:06 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-610, totalExpense=23010}
+2024-12-24 22:37:17 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 22:37:17 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:37:17 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:37:17 [http-nio-8080-exec-5] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 22:37:17 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:37:17 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:37:18 [http-nio-8080-exec-6] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 22:37:18 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:37:18 [http-nio-8080-exec-6] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:37:22 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 22:37:22 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:37:22 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:48:39 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:48:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-24 22:48:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-24 22:48:44 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-24 22:48:44 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 8512 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-24 22:48:44 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 22:48:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-24 22:48:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+2024-12-24 22:48:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 22:48:45 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:48:45 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 22:48:45 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-24 22:48:45 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-24 22:48:45 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 22:48:45 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1731 ms
+2024-12-24 22:48:46 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-24 22:48:46 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-24 22:48:46 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-24 22:48:46 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-24 22:48:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-24 22:48:46 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67dc6b48
+2024-12-24 22:48:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-24 22:48:47 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-24 22:48:47 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:48:48 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-24 22:48:48 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-24 22:48:49 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-24 22:48:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:48:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-24 22:48:49 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 5.789 seconds (process running for 6.206)
+2024-12-24 22:48:53 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-24 22:48:53 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-24 22:48:53 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-12-24 22:55:03 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:55:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-24 22:55:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-24 22:55:06 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-24 22:55:06 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 10256 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-24 22:55:06 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 22:55:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-24 22:55:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
+2024-12-24 22:55:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 22:55:07 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:55:07 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 22:55:07 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-24 22:55:08 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-24 22:55:08 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 22:55:08 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1764 ms
+2024-12-24 22:55:08 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-24 22:55:08 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-24 22:55:08 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-24 22:55:08 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-24 22:55:08 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-24 22:55:08 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@55c03e4
+2024-12-24 22:55:08 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-24 22:55:09 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-24 22:55:10 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:55:10 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-24 22:55:11 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-24 22:55:11 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-24 22:55:11 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:55:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-24 22:55:11 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 5.825 seconds (process running for 6.237)
+2024-12-24 22:55:14 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-24 22:55:14 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-24 22:55:14 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-24 22:55:35 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 驗證用戶名和密碼: 123
+2024-12-24 22:55:35 [http-nio-8080-exec-3] WARN  com.wealth.demo.service.UserService - 密碼錯誤，用戶: 123
+2024-12-24 22:55:41 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 驗證用戶名和密碼: 123
+2024-12-24 22:55:41 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶 123 驗證成功！
+2024-12-24 22:55:41 [http-nio-8080-exec-2] INFO  com.wealth.demo.util.SessionUtils - 設置用戶到 Session: username=123, userId=3
+2024-12-24 22:55:41 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 22:55:41 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:55:41 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:55:41 [http-nio-8080-exec-4] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 22:55:41 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 22:55:41 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:55:41 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:55:41 [http-nio-8080-exec-4] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 23010, 結餘: -610
+2024-12-24 22:55:41 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-610, totalExpense=23010}
+2024-12-24 22:55:41 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 22:55:41 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:55:41 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:55:41 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 22:55:41 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 23010, 結餘: -610
+2024-12-24 22:55:41 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-610, totalExpense=23010}
+2024-12-24 22:55:48 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 22:55:48 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 22:55:48 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:55:48 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:55:48 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:55:48 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:55:48 [http-nio-8080-exec-1] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 22:55:48 [http-nio-8080-exec-4] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 22:55:48 [http-nio-8080-exec-4] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 23010, 結餘: -610
+2024-12-24 22:55:48 [http-nio-8080-exec-1] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 23010, 結餘: -610
+2024-12-24 22:55:48 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-610, totalExpense=23010}
+2024-12-24 22:55:48 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-610, totalExpense=23010}
+2024-12-24 22:55:49 [http-nio-8080-exec-7] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 22:55:49 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:55:49 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:56:47 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:56:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-24 22:56:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-24 22:56:49 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-24 22:56:49 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 16132 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-24 22:56:49 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 22:56:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-24 22:56:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+2024-12-24 22:56:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 22:56:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:56:51 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 22:56:51 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-24 22:56:51 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-24 22:56:51 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 22:56:51 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1814 ms
+2024-12-24 22:56:51 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-24 22:56:51 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-24 22:56:51 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-24 22:56:52 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-24 22:56:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-24 22:56:52 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@100807ca
+2024-12-24 22:56:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-24 22:56:53 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-24 22:56:53 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:56:54 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-24 22:56:54 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-24 22:56:54 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-24 22:56:55 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:56:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-24 22:56:55 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 6.044 seconds (process running for 6.493)
+2024-12-24 22:56:55 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-24 22:56:55 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-24 22:56:55 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-12-24 22:57:01 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 驗證用戶名和密碼: 123
+2024-12-24 22:57:02 [http-nio-8080-exec-7] INFO  com.wealth.demo.service.UserService - 用戶 123 驗證成功！
+2024-12-24 22:57:02 [http-nio-8080-exec-7] INFO  com.wealth.demo.util.SessionUtils - 設置用戶到 Session: username=123, userId=3
+2024-12-24 22:57:02 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 22:57:02 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:57:02 [http-nio-8080-exec-10] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 22:57:02 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:57:02 [http-nio-8080-exec-9] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:57:02 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 22:57:02 [http-nio-8080-exec-10] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:57:02 [http-nio-8080-exec-9] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 23010, 結餘: -610
+2024-12-24 22:57:02 [http-nio-8080-exec-9] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-610, totalExpense=23010}
+2024-12-24 22:57:02 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 接收到統計數據請求
+2024-12-24 22:57:02 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:57:02 [http-nio-8080-exec-1] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:57:02 [http-nio-8080-exec-1] INFO  c.wealth.demo.service.WealthService - 開始計算用戶統計數據，User ID: 3
+2024-12-24 22:57:02 [http-nio-8080-exec-1] INFO  c.wealth.demo.service.WealthService - 統計完成 - 總收入: 22400, 總支出: 23010, 結餘: -610
+2024-12-24 22:57:02 [http-nio-8080-exec-1] INFO  c.w.demo.controller.WealthController - 統計數據計算完成: {totalIncome=22400, balance=-610, totalExpense=23010}
+2024-12-24 22:57:07 [http-nio-8080-exec-4] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=asc
+2024-12-24 22:57:07 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:57:07 [http-nio-8080-exec-4] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:57:08 [http-nio-8080-exec-3] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=0, SortDirection=desc
+2024-12-24 22:57:08 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:57:08 [http-nio-8080-exec-3] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:57:10 [http-nio-8080-exec-2] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=1, SortDirection=asc
+2024-12-24 22:57:10 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:57:10 [http-nio-8080-exec-2] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:57:10 [http-nio-8080-exec-5] INFO  c.w.demo.controller.WealthController - 接收到分頁查詢請求: Start=0, Length=10, Search=, SortColumn=1, SortDirection=desc
+2024-12-24 22:57:10 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 查詢用戶 ID: 3
+2024-12-24 22:57:10 [http-nio-8080-exec-5] INFO  com.wealth.demo.service.UserService - 用戶查詢成功: 123
+2024-12-24 22:58:52 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:58:52 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-24 22:58:52 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-24 22:58:55 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-24 22:58:55 [main] INFO  c.wealth.demo.SpringbootApplication - Starting SpringbootApplication using Java 21.0.5 with PID 19452 (C:\JavaProjects\forwar-to-wealth\forwar-to-wealth\target\classes started by jkl94 in C:\JavaProjects\forwar-to-wealth\forwar-to-wealth)
+2024-12-24 22:58:55 [main] INFO  c.wealth.demo.SpringbootApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 22:58:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-24 22:58:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces.
+2024-12-24 22:58:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 22:58:56 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:58:56 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 22:58:56 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-24 22:58:57 [main] INFO  o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2024-12-24 22:58:57 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 22:58:57 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1900 ms
+2024-12-24 22:58:57 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-24 22:58:57 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-24 22:58:57 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-24 22:58:57 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-24 22:58:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-24 22:58:57 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e39f08c
+2024-12-24 22:58:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-24 22:58:58 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-24 22:58:58 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 22:58:59 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-24 22:59:00 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-24 22:59:00 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2024-12-24 22:59:00 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-24 22:59:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-24 22:59:00 [main] INFO  c.wealth.demo.SpringbootApplication - Started SpringbootApplication in 6.091 seconds (process running for 6.536)
